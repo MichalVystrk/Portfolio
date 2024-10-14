@@ -88,14 +88,14 @@ body {
 #uvod .uvodniText {
     display: flex;
     color: #D6C0B3;
-    font-size: 6vh;
+    font-size: 3rem;
     padding: 2rem 5rem;
     text-align: center;
 }
 #uvod .uvodniButton a {
     color: #E4E0E1;
     padding: 1.5rem;
-    background-color: #533d2e;
+    background-color: #AB886D;
     border-radius: 15px;
     text-decoration: none;
     
@@ -103,7 +103,7 @@ body {
 #uvod .uvodniButton:hover a {
     color: #E4E0E1;
     padding: 1.5rem;
-    background-color: #30231a;
+    background-color: #745b49;
     border-radius: 15px; 
 }
 /* O mě */
@@ -139,4 +139,18 @@ body {
 }
 #oMe .oMePravo{
     max-width: 60vh;
+}
+
+/* Kontakt */
+#kontakt {
+    background-color: #745b49;
+    padding: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: #E4E0E1;
+}
+#kontakt p {
+    margin: 1rem;
+    font-weight: 700;
 }
