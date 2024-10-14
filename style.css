@@ -1,0 +1,142 @@
+/* css */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Mulish', sans-serif;
+}
+/* font weights */
+.light {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 200; /* Lehké písmo */
+}
+
+.normal {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400; /* Normální písmo */
+}
+
+.bold {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 700; /* Tlustší písmo */
+}
+
+.extra-bold {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 900; /* Velmi tlusté písmo */
+}
+
+/* navbar */
+
+#navbar {
+    background-color: #AB886D;
+    display: flex;
+    justify-content: space-between;
+    color: #E4E0E1;
+    align-items: center;
+    padding: 0.75rem;
+    letter-spacing: 1px;
+    position: fixed; /* Připne navbar k vrcholu obrazovky */
+    top: 0; /* Ujistí se, že je na vrcholu */
+    width: 100%; /* Šířka navbaru je 100% */
+    z-index: 1000; /* Ujistí se, že je navbar nad ostatním obsahem */
+}
+#navbar ul {
+    display: flex;
+    list-style: none;
+    font-size: large;
+    padding: 0 1.75rem 0 0;
+    
+}
+#navbar li {
+    margin: 0.5rem 1rem;
+}
+#navbar a {
+    text-decoration: none;
+    color: #E4E0E1;
+    padding: 0.5rem;
+}
+#navbar a:hover {
+    text-decoration: none;
+    color: #E4E0E1;
+    padding: 0.5rem;
+    background-color: #705947;
+    border-radius: 8px;
+}
+#navbar .leftNav {
+    font-size: larger;
+}
+/* úvod */
+#uvod {
+    background-image: url(./fotky/IMG_0694.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    
+}
+#uvod .uvodniBlok {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#uvod .uvodniText {
+    display: flex;
+    color: #D6C0B3;
+    font-size: 6vh;
+    padding: 2rem 5rem;
+    text-align: center;
+}
+#uvod .uvodniButton a {
+    color: #E4E0E1;
+    padding: 1.5rem;
+    background-color: #533d2e;
+    border-radius: 15px;
+    text-decoration: none;
+    
+}
+#uvod .uvodniButton:hover a {
+    color: #E4E0E1;
+    padding: 1.5rem;
+    background-color: #30231a;
+    border-radius: 15px; 
+}
+/* O mě */
+#oMe {
+    background-color: #E4E0E1;
+    padding: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+#oMe div {
+    margin: 3rem;
+}
+#oMe .oMeLevo{
+    max-width: 40vh;
+}   
+#oMe .fotka {
+    width: 200px; /* Šířka a výška kontejneru, můžeš přizpůsobit */
+    height: 200px; /* Výška */
+    overflow: hidden; /* Skryje část obrázku, která přesahuje */
+    border-radius: 50%; /* Dělá kroužek */
+    display: flex; /* Aby bylo možné centrovat obrázek */
+    align-items: center; /* Vertikální zarovnání */
+    justify-content: center; /* Horizontální zarovnání */
+    margin: 7vh;
+    
+}
+#oMe .fotka img {
+    width: 100%; /* Šířka obrázku bude 100% kontejneru */
+    height: auto; /* Udržuje poměr stran */
+    object-fit: cover;
+    object-position: top;
+}
+#oMe .oMePravo{
+    max-width: 60vh;
+}
