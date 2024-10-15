@@ -43,6 +43,7 @@ body {
     width: 100%; /* Šířka navbaru je 100% */
     z-index: 1000; /* Ujistí se, že je navbar nad ostatním obsahem */
 }
+
 #navbar ul {
     display: flex;
     list-style: none;
@@ -115,7 +116,7 @@ body {
     align-items: center; 
 }
 #oMe div {
-    margin: 3rem;
+    margin: 3vh;
 }
 #oMe .oMeLevo{
     max-width: 40vh;
@@ -139,6 +140,7 @@ body {
 }
 #oMe .oMePravo{
     max-width: 60vh;
+    text-align: justify;
 }
 
 /* Kontakt */
@@ -147,10 +149,47 @@ body {
     padding: 7vh;
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: top; 
     color: #E4E0E1;
+}
+#kontakt > div {
+    margin: 5vh;
+    margin-top: 0;
+}
+#kontakt .levyKontakt {
+    font-size: 1.2rem;
 }
 #kontakt p {
     margin: 1rem;
     font-weight: 700;
+} 
+#kontakt .levyKontakt .IC{
+    margin-top: 3rem;
+}
+#kontakt .formular {
+    display: flex;
+    align-self: center;     
+}
+#kontakt .formular input, textarea {
+    width: 17rem;
+    padding: 0.5rem;
+    border-radius: 13px;
+    font-size: medium;
+    margin: 0.5rem;
+}
+#kontakt .zprava textarea{
+    width: 17rem;
+    height: 17rem; /* Výška pro více řádků */
+    padding: 0.5rem;
+    border-radius: 13px;
+    font-size: medium;
+    margin: 0.5rem;
+    resize: none; /* Zakáže změnu velikosti okna uživatelem */
+    font-family: 'Mulish', sans-serif;
+} 
+#kontakt .submitButton {
+
+}
+#kontakt .submit-button {
+    
 }
