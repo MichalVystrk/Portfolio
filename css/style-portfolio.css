@@ -1,0 +1,63 @@
+/* css */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+}
+
+
+/* navbar */
+#navbar {
+    background-color: #AB886D;
+    display: flex;
+    justify-content: space-between;
+    color: #E4E0E1;
+    align-items: center;
+    padding: 0.75rem;
+    letter-spacing: 1px;
+    position: fixed;
+    /* Připne navbar k vrcholu obrazovky */
+    top: 0;
+    /* Ujistí se, že je na vrcholu */
+    width: 100%;
+    /* Šířka navbaru je 100% */
+    z-index: 1000;
+    /* Ujistí se, že je navbar nad ostatním obsahem */
+    font-family: 'Mulish', sans-serif;
+    font-weight: 900;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+    font-size: large;
+    padding: 0 1.75rem 0 0;
+
+}
+
+#navbar li {
+    margin: 0.5rem 1rem;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #E4E0E1;
+    padding: 0.5rem;
+}
+
+#navbar a:hover:not(#logo) {
+    text-decoration: none;
+    color: #E4E0E1;
+    padding: 0.5rem;
+    background-color: #705947;
+    border-radius: 8px;
+}
+
+#navbar .leftNav {
+    font-size: larger;
+    margin-left: 1rem;
+}
