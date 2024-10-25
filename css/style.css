@@ -1,5 +1,4 @@
     /* css */
-
     * {
         padding: 0;
         margin: 0;
@@ -59,7 +58,6 @@
         list-style: none;
         font-size: large;
         padding: 0 1.75rem 0 0;
-
     }
 
     #navbar li {
@@ -185,6 +183,95 @@
         text-align: justify;
     }
 
+    /* Technika */
+    #technika {
+        background-color: #D6C0B3;
+        padding: 3rem;
+    }
+    #technika .technika-popis {
+        display: flex;
+        justify-content: center;
+    }
+    #technika .technika-polozky {
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 1.5rem;
+        transition: transform 0.5s ease;
+    }
+    #technika img {
+        width: 300px;
+        height: auto;
+        padding: 2rem;
+    }
+    #technika .technika-polozky:hover {
+        transform: scale(1.1);
+    }
+
+    #technika h1 {
+        text-align: center;
+        padding-bottom: 3rem;
+        font-size: 2rem;
+    }
+    /* Ceník */
+
+    #tabulka table {
+        width: 60%;
+        border-collapse: collapse;
+        margin: 0 0 2rem 0;
+        font-size: 1rem;
+        text-align: left;
+    }
+    
+    #tabulka th, #tabulka td {
+        padding: 1rem;
+        border: 1px solid #705947;
+        /* Lehké orámování buněk */
+    }
+    
+    #tabulka th {
+        background-color: #705947;
+        color: #E4E0E1;
+        font-weight: 700;
+        text-transform: uppercase;
+        /* Zvýraznění záhlaví tabulky */
+    }
+    
+    #tabulka td {
+        background-color: #f9f9f9;
+        color: #333;
+    }
+    
+    #tabulka tr:nth-child(even) td {
+        background-color: #eee;
+        /* Střídavé řádky pro lepší čitelnost */
+    }
+    
+    #tabulka td:nth-child(3), #tabulka td:nth-child(5) {
+        text-align: right;
+        /* Zarovnání cen a počtu fotografií doprava */
+    }
+    
+    #tabulka tr:hover td {
+        background-color: #AB886D;
+        color: #fff;
+        /* Hover efekt pro zvýraznění řádku */
+    }
+    
+    #tabulka {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #tabulka h1 {
+        font-size: 2rem;
+        margin: 1.5rem;
+        color: #705947;
+        font-weight: bold;
+    }
+    
     /* Kontakt */
     #kontakt {
         background-color: #745b49;
